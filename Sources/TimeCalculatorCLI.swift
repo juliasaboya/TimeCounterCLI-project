@@ -78,19 +78,16 @@ struct Timecounter: ParsableCommand {
         printFormattedAdd(futureDate!)
     }
     mutating func run() throws {
-        //
-        //
-        // OPTIONS
-        //
-        //
+        
         let titulo = timeCounterTitle()
         print(titulo)
-        printFormattedPeriod(start, end)
         
         if let days = add {
             add(days, to: start)
         } else if start.distance(to: end) < 2 {
             print("Insert an time and date by using the --end option, or --add option")
+        } else {
+            printFormattedPeriod(start, end)
         }
 
         for flag in weekdayFlags {

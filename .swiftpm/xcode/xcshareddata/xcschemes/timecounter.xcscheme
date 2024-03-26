@@ -55,8 +55,12 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--start 26/03/2023 --end  27/04/2024  --wknd"
+            argument = "--add 10"
             isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--start 26/03/2023 --end  27/04/2024  --wknd"
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
