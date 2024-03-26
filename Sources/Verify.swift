@@ -10,7 +10,6 @@ import Foundation
 func iterableDates(from fromDate: Date, to toDate: Date) -> [Date] {
     var dates: [Date] = []
     var date = fromDate
-    
     while date <= toDate {
         dates.append(date)
         guard let newDate = Calendar.current.date(byAdding: .day, value: 1, to: date) else { break }
@@ -19,7 +18,7 @@ func iterableDates(from fromDate: Date, to toDate: Date) -> [Date] {
     return dates
 }
 
-// TODO: Estudar primeiro testes unitários
+// TO-DO: Estudar primeiro testes unitários
 // depois... boas praticas de Programação: Codigo Limpo, Arquitetura Limpa, Principios SOLID
 /*
  let start = "13/04/2024"
@@ -30,15 +29,17 @@ func iterableDates(from fromDate: Date, to toDate: Date) -> [Date] {
  assertEqual(workdays, 10)
  */
 
-func output(_ start: Date, _ end: Date, check: (Date) -> Bool) {
+@discardableResult
+func output(_ start: Date, _ end: Date, check: (Date) -> Bool) -> [String] {
     let dates = iterableDates(from: start, to: end)
-    var res: [Date] = []
+    var res: [String] = []
     for date in dates {
         if check(date) {
-            res.append(date)
+            let formattedDate = printFormattedDate(date)
+            res.append(formattedDate)
         }
     }
-    print("Quantidade de datas: \(res.count)")
+    return res
 }
 
 func checkDate(_ date: Date, weekday: WeekdayFlags) -> Bool {

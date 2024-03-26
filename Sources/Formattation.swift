@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 func printFormattedPeriod(_ start: Date?, _ end: Date?) {
     let formatter = DateComponentsFormatter()
     formatter.allowedUnits = [.year, .month, .day, .hour, .minute]
@@ -22,4 +21,12 @@ func printFormattedAdd(_ futureDate: Date){
     dateFormatter.timeStyle = .short
     let output = dateFormatter.string(from: futureDate)
         print(output)
+}
+
+func printFormattedDate(_ futureDate: Date) -> String{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .full
+    dateFormatter.timeStyle = .short
+    let output = dateFormatter.string(from: futureDate)
+    return output
 }

@@ -8,6 +8,8 @@
 import Foundation
 import ArgumentParser
 
+// cp -f timecounter /usr/local/bin/timecounter
+
 extension Date: ExpressibleByArgument {
     public init?(argument: String) {
         let formatter1 = DateFormatter()

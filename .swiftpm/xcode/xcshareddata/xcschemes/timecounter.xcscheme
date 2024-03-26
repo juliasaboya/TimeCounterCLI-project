@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "TimeCalculatorCLI"
-               BuildableName = "TimeCalculatorCLI"
-               BlueprintName = "TimeCalculatorCLI"
+               BlueprintIdentifier = "timecounter"
+               BuildableName = "timecounter"
+               BlueprintName = "timecounter"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,59 +43,19 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "TimeCalculatorCLI"
-            BuildableName = "TimeCalculatorCLI"
-            BlueprintName = "TimeCalculatorCLI"
+            BlueprintIdentifier = "timecounter"
+            BuildableName = "timecounter"
+            BlueprintName = "timecounter"
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--end &quot;27/04/2024 16:00&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = ""
+            argument = "--end  27/04/2024  --wknd"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--start 19/03/2024 --end 14/04/2024"
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--start &quot;13/04/2024 14:30&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--end &quot;24/12/2024&quot; "
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--add 7"
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--wknd"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--work"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--sun"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--mon"
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--tue"
-            isEnabled = "NO">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "--help"
+            argument = "--start 26/03/2023 --end  27/04/2024  --wknd"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -110,9 +70,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "TimeCalculatorCLI"
-            BuildableName = "TimeCalculatorCLI"
-            BlueprintName = "TimeCalculatorCLI"
+            BlueprintIdentifier = "timecounter"
+            BuildableName = "timecounter"
+            BlueprintName = "timecounter"
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
